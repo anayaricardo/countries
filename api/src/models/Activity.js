@@ -4,7 +4,7 @@ const { DataTypes } = require("sequelize");
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define(
-    "country",
+    "activity",
     {
       id: {
         type: DataTypes.STRING,
@@ -15,28 +15,16 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      flags: {
+      difficulty: {
+        type: DataTypes.ENUM("1", "2", "3", "4", "5"),
+        allowNull: false,
+      },
+      duration: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      continents: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      capital: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      subregion: {
-        type: DataType.STRING,
-        allowNull: false,
-      },
-      area: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
-      population: {
-        type: DataTypes.INTEGER,
+      season: {
+        type: DataTypes.ENUM("Spring", "Summer", "Autumn", "Winter"),
         allowNull: false,
       },
     },
@@ -45,5 +33,3 @@ module.exports = (sequelize) => {
     }
   );
 };
-
-
