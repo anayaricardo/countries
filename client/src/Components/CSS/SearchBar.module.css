@@ -1,0 +1,41 @@
+.divBar {
+  /* border: 1px solid burlywood; */
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+.input {
+  background-color: white; 
+  /* font-style: italic; */
+  border-style: hidden;
+  color: rgb(97, 97, 97);
+  font-size: 18px;
+  border-radius: 25px;
+  width: 300px;
+  /* background: transparent; */
+  position: relative;
+  cursor: auto;
+  outline: 0;
+  padding: 10px;
+  /* border: 1.5px solid #ec6408; */
+}
+
+.input::placeholder {
+  color: rgb(167, 167, 167);
+}
+
+.add {
+  border: 1px solid rgb(21, 248, 0);
+  background-color: #233142;
+  color: white;
+  width: 60px;
+  height: 31.5px;
+  border-radius: 5px;
+  margin: 0 1px 0 1px;
+}
+.add:hover {
+    border: 1px solid rgb(21, 248, 0);
+  background-color: white;
+  color: black;
+}

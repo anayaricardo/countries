@@ -1,0 +1,181 @@
+
+.div{
+    /* border: 1px solid burlywood; */
+    border-radius: 10px;
+    /* background-color:#0000006c; */
+    /* background-color:#ff480064; */
+    /* background-color:#0000008a; */
+    width: 98%;
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    /* border: 2px solid #EC6408; */
+    /* border-bottom: #ec6408 3px solid; */
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 72, 0, 0.877);
+}
+
+.filter{
+    /* border: 1px solid burlywood; */
+    /* background-color:#00000054; */
+    /* width:100%;
+    height:100%; */
+    /* margin-left: 2%;
+    margin-right: 2%; */
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 5px;
+}
+
+
+.btnDiv{
+    /* border: 1px solid burlywood; */
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.filterBtn{
+    /* background-color:#233142;
+    color: white;
+    width: 95%;
+    height: 40px;
+    border-radius:5px;
+    margin: 3px 1px 3px 1px;
+    cursor:pointer; */
+    background: #3d3c3c;
+    /* background: #3d3c3c; */
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin-bottom: 30%; */
+    border-radius: 5px;
+    border-color: none;
+    border: none;
+    margin: 0px 10px 0px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.filterBtn:hover{
+    /* background-color:white;
+    color:#233142; */
+    cursor: pointer;
+    background: #ec6408;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s ease-in-out;
+    transform: translate3d(1px, 1px, 0px);
+    transition: all 0.3s ease;
+    box-shadow: #000000d2 0px 0px 10px;
+}
+
+.form{
+    /* border: 1px solid burlywood; */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px 10px 0px;
+    
+    
+}
+
+.elements{
+    /* border: 1px solid burlywood; */
+    display:flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+}
+
+.subTitle{
+    /* border: 1px solid burlywood; */
+        font-size:20px;
+    margin:8px;
+    font-weight: 650;
+    cursor: default;
+} 
+
+.options {
+    /* border: 1px solid burlywood; */
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0px 0px 10px 0px;  
+    font-size: 16px;
+}
+
+
+/* .input {
+    border: 1px solid burlywood;
+    margin: 0px 5px 0px 5px;
+    cursor: default;
+    
+}
+.input:hover{
+    color:#ec6408;
+}
+.input::before{
+    background-color: #EC6408;
+} */
+
+
+  .input {
+    width: 49px;
+    height: 15px;
+    background: #3d3c3c;
+    margin: 20px 10px;
+    position: relative;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+
+  }
+
+    .input:hover {
+        /* background: #4e4e4e; */
+        color: rgb(200, 255, 0);
+        transition: all .3s ease-in-out;
+        /* color: #EC6408; */
+    }
+
+  .input label {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    background: rgb(122, 122, 122);
+  }
+
+  .input:hover label {
+    background: rgb(231, 231, 231);
+    transition: all .3s ease-in-out;
+  }
+
+  .input input[type="checkbox"]:checked + label {
+    transition: all .3s ease-in-out;
+    left: 35px;
+    background: rgb(200, 255, 0);
+    box-shadow: #d9ff00de 0px 0px 15px;
+    /* background: #ff771c; */
+    /* box-shadow: #ff8839 0px 0px 15px; */
+  }
+
