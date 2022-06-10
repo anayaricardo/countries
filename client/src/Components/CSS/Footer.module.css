@@ -1,0 +1,103 @@
+.background {
+    /* background-image: url(../../img/11.png); */
+  }
+  
+  .buttonAndTitle {
+    /* border: 1px solid burlywood; */
+    /* background-color: rgba(0, 0, 0, 0.308); */
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: max-content; */
+    margin-top: 10%;
+    /* margin-bottom: 5%; */
+    /* margin-left: 30%; */
+    /* margin-right: 30%; */
+  }
+  
+  .tripper {
+    /* border: 1px solid burlywood; */
+    margin-top: 100px;
+    max-width: 30%;
+    height: auto;
+    width: auto/9;
+    filter: drop-shadow(2px 2px 4px #000000);
+  }
+  
+  .Title {
+    /* height: max-content; */
+    /* border: 1px solid burlywood; */
+    /* margin-top: 15%; */
+    /* max-height: max-contentheight; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .One {
+    /* border: 1px solid burlywood; */
+    font-size: 300%;
+    font-weight: lighter;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .Two {
+    /* border: 1px solid burlywood; */
+    font-size: 150%;
+    font-weight: lighter;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .Three {
+    /* color: rgb(255, 72, 0); */
+    /* border: 1px solid burlywood; */
+    font-size: 100%;
+    font-weight: lighter;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    /* margin-top: 20%; */
+  }
+  
+  .Button {
+    background: #3d3c3cbd;
+    /* background: #3d3c3c; */
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10%;
+    /* margin-bottom: 30%; */
+    border-radius: 5px;
+    border-color: none;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Button:hover {
+    cursor: pointer;
+    background: #ec6408;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(1px, 1px, 0px);
+    /* box-shadow: #000000d2 0px 0px 10px; */
+  }

@@ -27,6 +27,7 @@ export function CountryDetails(props) {
       <div className={CountryDetail}>
         {props.byId.getById.map((e) => {
           const {
+            id,
             flags,
             name,
             continents,
@@ -41,6 +42,7 @@ export function CountryDetails(props) {
                 <h1>{name}</h1>
                 <img className={flag} src={flags} alt="Flag" id="flag" />
                 <h2>Continent: {continents}</h2>
+                <h3>Id: {id}</h3>
                 <h3>Capital: {capital}</h3>
                 <h3>Subregion: {subregion}</h3>
                 <h3>
@@ -65,7 +67,9 @@ export function CountryDetails(props) {
                   <span className={spanText}>Season</span>
                 </div>
                 {e.activities.length < 1 ? (
-                  <div className={activities}>Add new activities in the navigation menu</div>
+                  <div className={activities}>
+                    Add new activities in the navigation menu
+                  </div>
                 ) : (
                   e.activities.map((e) => {
                     const { name, difficulty, duration, season } = e;

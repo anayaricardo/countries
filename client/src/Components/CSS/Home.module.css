@@ -1,6 +1,6 @@
 .home {
-  background-image: url(../../img/Detail.png);
-  /* background-color: #e6d1b1; */
+  background-image: url(../../img/11.png);
+  /* background-color:#ffffff; */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,8 +10,8 @@
 .filters {
   align-items: center;
   display: flex;
-  height:107vh;
-    /* width:99.8%; */
+  height: 107vh;
+  /* width:99.8%; */
   flex-direction: column;
   /* display: flex;
   flex-wrap: wrap;
@@ -34,6 +34,8 @@
   font-size: 250%;
   font-weight: lighter;
   font-family: Helvetica, Arial, sans-serif;
+  cursor: default;
+  margin-top: 50px;
 }
 
 ::-webkit-scrollbar {

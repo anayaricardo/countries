@@ -4,7 +4,7 @@ import style from "./CSS/Country.module.css";
 import { Link } from "react-router-dom";
 
 export function Country({ pages, Name, cards, countries }) {
-  const { country, subDiv, name1, flag, link, cardsStyle, divCards, FlagCard, hide, continents1 } =
+  const {  subDiv, name1, flag, link, cardsStyle, divCards, FlagCard, continents1 } =
     style;
   return (
     <div className={divCards}>

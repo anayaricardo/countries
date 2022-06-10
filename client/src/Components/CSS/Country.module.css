@@ -1,100 +1,93 @@
-.cardsStyle{
-    margin:5px 5px 5px 10px;
-    display:flex;
-    flex-direction: column;
-    width:350px;
-    height:280px;
-    font-size: 12px;
-    align-items: center;
-    color:rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px #000000;
+.cardsStyle {
+  margin: 10px 5px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 300px;
+  font-size: 12px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px #000000;
 
-    background: rgba(0, 0, 0, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.7px);
--webkit-backdrop-filter: blur(5.7px);
-border: 1px solid rgba(0, 0, 0, 0.3);
-transition: all 0.8s ease;
-/* border: 1px solid rgba(255, 255, 255, 0.46); */
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid #ffffff5b;
+  transition: all 0.8s ease;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  /* border: 1px solid rgba(255, 255, 255, 0.46); */
 }
 
-.cardsStyle:hover{
-    background: rgba(255, 255, 255, 0.61);
-    transition: all 0.8s ease;
-    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
--webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
-    transform: translate3d(0px,-10px,0px);
+.cardsStyle:hover {
+  background: rgba(255, 255, 255, 0.185);
+  transition: all 0.8s ease;
+  transform: translate3d(0px, -10px, 0px);
 }
 
-.divCards{
-    /* border: 1px solid rgb(81, 255, 0); */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    grid-gap: 1rem;
-    justify-content: center;
-    margin: 40px 5px 10px 5px;
+.divCards {
+  /* border: 1px solid rgb(81, 255, 0); */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  grid-gap: 1rem;
+  justify-content: center;
+  margin: 40px 5px 10px 5px;
 }
 
-.FlagCard{
-    
-    object-fit: cover;
-    width: 100%;
+.FlagCard {
+  object-fit: cover;
+  width: 100%;
   height: 100%;
   inset: 0px;
   transition: all 0.8s ease;
-  
 }
 
-.subDiv{
-    /* border: 1px solid rgb(8, 0, 255); */
-    /* height: 100%;
+.subDiv {
+  /* border: 1px solid rgb(8, 0, 255); */
+  /* height: 100%;
     width: 100%; */
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow: hidden;
-    width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 350px;
   height: 350px;
   transition: all 0.8s ease;
 }
 
 .subDiv:hover .FlagCard {
-    overflow: hidden;
-    transform: scale(1.1);
-  }
+  overflow: hidden;
+  transform: scale(1.1);
+}
 
-.name1{
-    /* border: 1px solid rgb(8, 0, 255); */
-    height: 50px;
-    width: 100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.name1 {
+  /* border: 1px solid rgb(8, 0, 255); */
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .continents1 {
-    height: 50px;
-    width: 100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mensaje{
+.mensaje {
   width: 100%;
   color: #2c2b2b;
   text-align: center;
   font-size: 2.5em;
-  padding: 1
+  padding: 1;
 }
-
-
-
-
-

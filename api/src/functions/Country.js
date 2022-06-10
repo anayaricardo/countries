@@ -5,7 +5,9 @@ const sequelize = require("sequelize");
 module.exports = {
   getCountries: async (req, res) => {
     try {
-    const countriesApi = await axios.get("https://restcountries.com/v3.1/all");
+      const countriesApi = await axios.get(
+        "https://restcountries.com/v3.1/all"
+      );
       if (req.query.name) {
         return await Country.findAll({
           include: [
@@ -22,9 +24,9 @@ module.exports = {
               ? res.send(country)
               : res.status(404).send("No countries found")
           )
-          .catch((err) =>
-            {error}
-          );
+          .catch((err) => {
+            error;
+          });
       }
       await Promise.all(
         countriesApi.data.map((e) => {
@@ -64,18 +66,18 @@ module.exports = {
         limit: 250,
       }).then((results) => res.send(results));
     } catch (error) {
-      console.error(error)
+      console.error(error);
     }
   },
 
-  getByName: async (req,res) => {
+  getByName: async (req, res) => {
     try {
       // const name = req.params.name;
       const country = await Country.findAll({
         include: [
           {
             model: Activity,
-          }
+          },
         ],
         where: {
           name: { [sequelize.Op.iLike]: `%${req.params.name}%` },
@@ -87,30 +89,9 @@ module.exports = {
         res.status(404).send("Country not found");
       }
     } catch (error) {
-      console.error(error)
+      console.error(error);
     }
   },
-
-  // getByName: async (req, res) => {
-  //   if (req.query.name) {
-  //     return await Country.findAll({
-  //       include: [
-  //         {
-  //           model: Activity,
-  //         },
-  //       ],
-  //       where: { name: { [sequelize.Op.iLike]: `%${req.query.name}%` } },
-  //     })
-  //       .then((country) =>
-  //         country.length
-  //           ? res.send(country)
-  //           : res.status(404).send("Country not found")
-  //       )
-  //       .catch((error) => {
-  //         error;
-  //       });
-  //   }
-  // },
 
   getById: async (req, res, next) => {
     try {
@@ -128,30 +109,12 @@ module.exports = {
       if (country) {
         res.send(country);
       } else {
-        res.status(404).send("Country not found");
+        res.status(404).send("ID not found");
       }
     } catch (error) {
-      console.error(error)
+      console.error(error);
     }
   },
-
-  // getById: async (req, res, next) => {
-  //   const id = req.params.id;
-  //   return await Country.findAll({
-  //     include: [
-  //       {
-  //         model: Activity,
-  //       },
-  //     ],
-  //     where: { id: { [sequelize.Op.iLike]: `${id}` } },
-  //   })
-  //     .then((results) =>
-  //       results.length
-  //         ? res.send(results)
-  //         : res.status(404).send("ID not found")
-  //     )
-  //     .catch((error) => next(error));
-  // },
 
   getAll: async (req, res) => {
     if (req.query.name) {

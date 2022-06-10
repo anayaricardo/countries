@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import style from "./CSS/Filter.module.css";
-import  { filterState }  from "../actions/actions.js";
+import { filterState } from "../actions/actions.js";
 
 export function Filter({ filterState, swapToCards }) {
   let {
@@ -221,7 +221,7 @@ export function Filter({ filterState, swapToCards }) {
                   type="checkbox"
                   value="Spring"
                   name="difficulty"
-                  style={{ cursor: "pointer" , visibility: "hidden"}}
+                  style={{ cursor: "pointer", visibility: "hidden" }}
                   onChange={() => handleChangeSeason("Spring")}
                   id="spring"
                 />
@@ -286,7 +286,7 @@ export function Filter({ filterState, swapToCards }) {
                   type="checkbox"
                   value="America"
                   name="difficulty"
-                  style={{ cursor: "pointer" , visibility: "hidden"}}
+                  style={{ cursor: "pointer", visibility: "hidden" }}
                   onChange={() => handleChangeContinent("America")}
                   id="america"
                 />
@@ -310,7 +310,7 @@ export function Filter({ filterState, swapToCards }) {
                   type="checkbox"
                   value="Europe"
                   name="difficulty"
-                  style={{ cursor: "pointer", visibility: "hidden"}}
+                  style={{ cursor: "pointer", visibility: "hidden" }}
                   onChange={() => handleChangeContinent("Europe")}
                   id="europe"
                 />
@@ -374,4 +374,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, {filterState })(Filter);
+export default connect(mapStateToProps, { filterState })(Filter);
