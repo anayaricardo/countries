@@ -1,5 +1,5 @@
 .divBar {
-  /* border: 1px solid burlywood; */
+  /* border: 1px solid rgb(0, 89, 255); */
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -18,10 +18,19 @@
   cursor: auto;
   outline: 0;
   padding: 10px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  /* border: 1.5px solid #ec6408; */
+  transition: all 1s ease-in-out;
+}
+
+.input:hover{
+  transition: all 0.3s ease-in-out;
   box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  /* border: 1.5px solid #ec6408; */
+  transform: translate3d(0px, -1px, 0px);
 }
 
 .input::placeholder {

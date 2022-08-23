@@ -2,15 +2,13 @@
   cursor: pointer;
   font-size: 30px;
   color: white;
-  text-shadow: 2px 2px 4px #000000;
+  /* text-shadow: 2px 2px 4px #0000008f; */
   background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
   border: 1px solid #ffffff5b;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
   width: 50px;
   height: 50px;
   -moz-border-radius: 50%;
@@ -18,6 +16,9 @@
   border-radius: 50%;
   margin-right: 15px;
   margin-left: 15px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btn:hover {
@@ -25,6 +26,10 @@
   /* color:#ec6408; */
   background: rgba(255, 255, 255, 0.185);
   transition: all 0.3s ease;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px #0000008f;
 
   /* transform: translate3d(0px,-10px,0px); */
 }
@@ -34,11 +39,11 @@
   /* display: none; */
   font-size: 30px;
   color: white;
-  text-shadow: 2px 2px 4px #000000;
+  /* text-shadow: 2px 2px 4px #000000; */
   background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
   border: 1px solid #ffffff5b;
@@ -79,7 +84,7 @@
   flex-direction: column;
   font-size: 20px;
   color: white;
-  text-shadow: 2px 2px 4px #000000;
+  /* text-shadow: 2px 2px 4px #000000; */
 }
 .btnDiv {
   /* border: 1px solid rgb(81, 255, 0); */
@@ -89,4 +94,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.page1 {
+  text-shadow: 2px 2px 4px #0000008e;
 }

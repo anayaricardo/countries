@@ -5,7 +5,7 @@ import style from "./CSS/Countries.module.css";
 import Country from "./Country.jsx";
 
 export function Countries({ country, pages, filterState }) {
-  const { noCountries, Countries, btnDiv, btnHide, btn, cardsStyle } = style;
+  const { noCountries, Countries, btnDiv, btnHide, btn, cardsStyle, page1 } = style;
   const [page, setPage] = useState(0);
   const [aux, setAux] = useState(filterState); //aux to look at a change into the filterState to set page to 0
 
@@ -39,7 +39,7 @@ export function Countries({ country, pages, filterState }) {
           <button className={page === 0 ? btnHide : btn} onClick={onAfter}>
             {"<"}
           </button>
-          <h4>Page {page + 1}</h4>
+          <h4 className={page1}>Page {page + 1}</h4>
           <button
             className={page < Math.floor(country.length / 10) ? btn : btnHide}
             onClick={onNext}

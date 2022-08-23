@@ -12,7 +12,7 @@
     align-items: center;
     width: 100%;
     /* height: max-content; */
-    margin-top: 10%;
+    margin-top: 18%;
     /* margin-bottom: 5%; */
     /* margin-left: 30%; */
     /* margin-right: 30%; */
@@ -24,7 +24,15 @@
     max-width: 30%;
     height: auto;
     width: auto/9;
-    filter: drop-shadow(2px 2px 4px #000000);
+    filter: drop-shadow(2px 2px 4px #0000003a);
+    transition: all 1s ease-in-out;
+  }
+  
+  .tripper:hover {
+    filter: drop-shadow(2px 2px 4px #00000057);
+    transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, -1px, 0px);
+
   }
   
   .Title {
@@ -38,7 +46,7 @@
     align-items: center;
     max-width: 100%;
     color: white;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #00000098;
   }
   
   .One {
@@ -87,17 +95,20 @@
     border-radius: 5px;
     border-color: none;
     border: none;
-    transition: all 0.5s ease-in-out;
-    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+    transition: all 1s ease-in-out;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   }
   
   .Button:hover {
+    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     background: #ec6408;
     color: rgb(255, 255, 255);
-    transition: all 0.5s ease-in-out;
-    transform: translate3d(1px, 1px, 0px);
+    transition: all 0.3s ease-in-out;
+    transform: translate3d(0px, -1px, 0px);
     /* box-shadow: #000000d2 0px 0px 10px; */
   }

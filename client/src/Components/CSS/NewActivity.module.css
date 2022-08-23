@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000b6;
   margin-bottom: 80px;
   margin-top: 30px;
   padding: 10px 10px 10px 10px;
@@ -66,10 +66,10 @@
   font-size: 18px;
   text-shadow: 2px 2px 4px #000000;
   font-family: Helvetica, Arial, sans-serif;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: all 1s ease-in-out;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btnAdd:hover {
@@ -77,9 +77,12 @@
   background: #ec6408;
   color: rgb(255, 255, 255);
   transition: color 0.5s ease-in-out;
-  transform: translate3d(1px, 1px, 0px);
+  transform: translate3d(0px, -1px, 0px);
   transition: all 0.3s ease-in-out;
   /* box-shadow: #000000d2 0px 0px 10px; */
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btn {
@@ -94,11 +97,11 @@
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-family: Helvetica, Arial, sans-serif;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
   text-shadow: 2px 2px 4px #000000;
-  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btn:hover {
@@ -106,9 +109,12 @@
   background: #ec6408;
   color: rgb(255, 255, 255);
   transition: color 0.5s ease-in-out;
-  transform: translate3d(1px, 1px, 0px);
+  transform: translate3d(0px, -1px, 0px);
   transition: all 0.3s ease-in-out;
   /* box-shadow: #000000d2 0px 0px 10px; */
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .btnBlock {
@@ -125,7 +131,10 @@
   font-family: Helvetica, Arial, sans-serif;
   transition: all 0.3s ease-in-out;
   cursor: not-allowed;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000e5;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 .countriesDiv {
@@ -154,18 +163,24 @@
   color: white;
   cursor: pointer;
   font-weight: 700;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000000a2;
   border: hidden;
   margin: 5px 5px 5px 5px;
-  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
 }
 
 .countryBtn:hover {
   background-color: #ff0000c5;
+  transform: translate3d(0px, -1px, 0px);
   color: white;
+  transition: all 0.3s ease-in-out;
   text-decoration: line-through;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .inputClass {
