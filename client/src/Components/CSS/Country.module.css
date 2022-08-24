@@ -14,7 +14,7 @@
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
   border: 1px solid #7070705b;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
@@ -25,8 +25,14 @@
 .cardsStyle:hover {
   text-shadow: 2px 2px 4px #00000077;
   border: 1px solid #ffffff5b;
-  background: rgba(255, 255, 255, 0.185);
-  transition: all 0.8s ease;
+  /* background: rgba(255, 255, 255, 0.185); */
+  background: rgba(37, 37, 37, 0.103);
+  /* background: #ffee00; */
+  /* background-image: url(../../img/11.png); */
+  /* background-image: url(../../img/R.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
   transform: translate3d(0px, -1px, 0px);
   box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);

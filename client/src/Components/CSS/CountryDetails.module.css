@@ -54,7 +54,7 @@
 }
 
 .activities:hover {
-  background-color: #fa7f2c;
+  background-color: #ff6600;
   cursor: pointer;
 }
 
@@ -85,13 +85,14 @@
 .activitiesDiv:hover {
   /* transform: scale(1.2) translate(10px, -200px); */
   transition: all 0.8s ease-in-out;
-  background-color: #313131;
+  /* background-color: #313131; */
   padding: 10px 60px 10px 60px;
+  background: rgba(37, 37, 37, 0.103);
 }
 
 .bar {
   /* border-bottom: 2px solid #EC6408; */
-  border-top: 1px solid #ec6408;
+  border-top: 3px solid #ec6408;
   display: flex;
   justify-content: space-around;
   color: white;

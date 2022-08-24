@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import style from "./CSS/CountryDetails.module.css";
 import { getById } from "../actions/actions.js";
 import Nav from "./Nav.jsx";
+import { Link } from "react-router-dom";
 
 const {
   bar,
@@ -67,8 +68,10 @@ export function CountryDetails(props) {
                   <span className={spanText}>Season</span>
                 </div>
                 {e.activities.length < 1 ? (
-                  <div className={activities}>
-                    Add new activities in the navigation menu
+                  <div >
+                    <Link to="/NewActivity" style={{ textDecoration: "none" }}>
+                    <p className={activities}>Add new activities</p>
+                    </Link>
                   </div>
                 ) : (
                   e.activities.map((e) => {

@@ -8,7 +8,8 @@
 .div {
   /* border: 1px solid #e6d1b1; */
   display: flex;
-  height: 93.5vh;
+  height: 89vh;
+  /* height: 100%; */
   width: 99.8%;
   justify-content: center;
 }
@@ -41,7 +42,8 @@
   /* transform: translate3d(0px, 0px, 0px); */
   padding: 10px 60px 10px 60px;
   transition: all 0.8s ease-in-out;
-  background-color: #313131;
+  /* background-color: #313131; */
+  background: rgba(37, 37, 37, 0.103);
 }
 
 .subDiv {
